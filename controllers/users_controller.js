@@ -15,7 +15,7 @@ module.exports.profile = async function(req, res){
 module.exports.signIn = function(req, res){
 
     if(req.isAuthenticated()){
-        res.redirect('/users/profile');
+        return res.redirect('/users/profile');
     }
 
     return res.render('sign_in', {
@@ -27,7 +27,7 @@ module.exports.signIn = function(req, res){
 module.exports.signUp = function(req, res){
 
     if(req.isAuthenticated()){
-        res.redirect('/users/profile');
+        return res.redirect('/users/profile');
     }
 
     return res.render('sign_up', {
@@ -68,4 +68,23 @@ module.exports.create = function(req, res){
 // sign in and create a session for the user
 module.exports.createSession = function(req, res){
     return res.redirect('/');
+}
+
+
+
+// sign out the currently logged in user manually
+// module.exports.signOut = function(req, res){
+//     res.clearCookie("Socializer");
+//     return res.redirect('/users/sign-in');
+// }
+
+
+module.exports.destroySession = function(req, res, next){
+    req.logout(function(err){
+        if(err){
+            return next(err);
+        }
+        res.redirect('/');
+    });
+
 }
