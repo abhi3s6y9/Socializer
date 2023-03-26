@@ -1,1 +1,2 @@
-This is social media web app.
+#Socializer
+This is a Web Development Project for building a Social media web application/website.
