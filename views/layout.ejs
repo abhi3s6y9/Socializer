@@ -6,15 +6,19 @@
     </title>
 
     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <%- style %>
 </head>
 
 <body>
-    <h1>This is layout file</h1>
+    <!-- <h1>This is layout file</h1> -->
 
     <%- include('_header'); %>
 
-    <%- body %>
+    <main id="layout-main">
+        <%- body %>
+    </main>
 
     <%- include('_footer'); %>
 
