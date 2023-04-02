@@ -1,12 +1,13 @@
 header {
-  width: 99vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #505ce3; }
   header h2 {
     color: lightgrey;
-    font-size: 150%;
-    margin-left: 10px; }
+    font-size: 200%;
+    margin-left: 15px;
+    margin-top: 10px; }
   header ul li {
     display: inline-block;
     margin-left: 10px;
