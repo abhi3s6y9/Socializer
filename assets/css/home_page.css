@@ -1,0 +1,8 @@
+#posts-list-container li h3 {
+  text-align: left; }
+
+#posts-list-container li p {
+  width: 20%;
+  height: 10vh;
+  border: 2px solid black;
+  border-radius: 5px; }
