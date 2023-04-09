@@ -6,6 +6,12 @@ module.exports.home = async function(req, res){
     // Populate the user of each post
     var posts = await Post.find()
                 .populate('user')
+                .populate({
+                    path: 'comments',
+                    populate: {
+                        path: 'user'
+                    }
+                })
                 .exec();
 
     return res.render('home', {
