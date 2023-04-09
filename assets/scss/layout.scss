@@ -3,6 +3,7 @@ body{
     text-align: center;
 
     #layout-main{
-        height: 77vh;
+        min-height: 77vh;
+        height: auto;
     }
 }

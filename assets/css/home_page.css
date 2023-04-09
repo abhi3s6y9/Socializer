@@ -1,8 +1,22 @@
-#posts-list-container li h3 {
-  text-align: left; }
+#feed-posts #new-post-form textarea {
+  padding: 10px; }
 
-#posts-list-container li p {
-  width: 20%;
-  height: 10vh;
-  border: 2px solid black;
-  border-radius: 5px; }
+#posts-list-container li {
+  margin-left: 100px; }
+  #posts-list-container li h3 {
+    text-align: left; }
+  #posts-list-container li p {
+    width: 40%;
+    height: 20vh;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px; }
+  #posts-list-container li .post-comments {
+    width: 60%; }
+    #posts-list-container li .post-comments input[type=text] {
+      width: 40%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box; }
+    #posts-list-container li .post-comments input[type=submit] {
+      margin-left: 200px; }
