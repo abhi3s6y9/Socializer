@@ -1,4 +1,5 @@
 const Post = require('../models/post');
+const User = require('../models/user');
 
 module.exports.home = async function(req, res){
     // return res.end('<h1>Express is up for Socializer</h1>');
@@ -14,9 +15,12 @@ module.exports.home = async function(req, res){
                 })
                 .exec();
 
+    let users = await User.find();
+
     return res.render('home', {
         title: "Home page",
-        posts: posts
+        posts: posts,
+        all_users: users
     });
 
 }
