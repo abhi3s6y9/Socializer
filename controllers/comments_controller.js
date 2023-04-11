@@ -17,3 +17,17 @@ module.exports.create = async function(req, res){
         res.redirect('/');
     }
 }
+
+module.exports.destroy = async function(req, res){
+    let comment = await Comment.findById(req.params.id);
+    if(comment.user == req.params.id){
+        let postId = comment.post;
+        await Post.findByIdAndUpdate(postId, { $pull: {comments: req.params.id}})
+        comment.deleteOne(comment._id);
+
+        return res.redirect('back');
+    }
+    else{
+        return res.redirect('back');
+    }
+}

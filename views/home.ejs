@@ -31,7 +31,7 @@
                     </p>
 
                     <!-- Comments to a Post -->
-                    <div class="post-comments">
+                    <div class="post-comment">
                         <% if(locals.user) {%>
                             <form action="/comments/create" method="POST">
                                 <input type="text" name="content" placeholder="Type here to add comment..." required>
@@ -52,6 +52,9 @@
                                         <p>
                                             <%= comment.content %>
                                         </p>
+                                        <% if (locals.user && (locals.user.id == comment.user.id)) { %>
+                                        <a href="/comments/destroy/<%= comment.id %>">X</a>
+                                        <% } %>
                                     </li>
                                 <% } %>
                             </ul>
