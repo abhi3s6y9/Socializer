@@ -10,7 +10,16 @@
     li{
         margin-left: 100px;
         h3{
+            display: inline-block;
             text-align: left;
+            margin-left: -900px;
+            margin-right: 500px;
+        }
+        a{
+            padding: 3px;
+            border-radius: 4px;
+            background-color: red;
+            color: white;
         }
         p{
             width: 40%;
@@ -39,7 +48,7 @@
 
         .post-comments-list{
             h4{
-                margin-left: -300px;
+                margin-left: -400px;
             }
 
             p{

@@ -4,7 +4,15 @@
 #posts-list-container li {
   margin-left: 100px; }
   #posts-list-container li h3 {
-    text-align: left; }
+    display: inline-block;
+    text-align: left;
+    margin-left: -900px;
+    margin-right: 500px; }
+  #posts-list-container li a {
+    padding: 3px;
+    border-radius: 4px;
+    background-color: red;
+    color: white; }
   #posts-list-container li p {
     width: 40%;
     height: 20vh;
@@ -21,7 +29,7 @@
     #posts-list-container li .post-comments input[type=submit] {
       margin-left: 200px; }
   #posts-list-container li .post-comments-list h4 {
-    margin-left: -300px; }
+    margin-left: -400px; }
   #posts-list-container li .post-comments-list p {
     width: 40%;
     height: 10%;
