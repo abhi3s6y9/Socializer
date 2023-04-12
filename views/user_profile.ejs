@@ -5,10 +5,25 @@
     <!-- <p>Name: <%= user.name %></p> -->
     <!-- <p>Email: <%= user.email %></p> -->
 
-    <p>Name: <%= profile_user.name %></p>
-    <p>Email: <%= profile_user.email %></p>
+    
 
     <!-- <form action="/users/sign-out" method="POST">
         <input type="submit" value="Logout">
     </form> -->
+
+    <% if(user.id == profile_user.id){%>
+        <!-- if user matches then only show this form -->
+        <form action="/users/update/<%= profile_user.id %>" method="post">
+            <input type="text" name="name" placeholder="Your Name" value="<%= profile_user.name %>" required>
+            <br><br>
+            <input type="email" name="email" placeholder="Your Email" value="<%= profile_user.email %>">
+            <br><br>
+            <input type="submit" value="Update">
+        </form>
+    <%}else{%>
+        <!-- if user doesn't match then show only profile info -->
+        <p>Name: <%= profile_user.name %></p>
+        <p>Email: <%= profile_user.email %></p>
+    <% } %>
+
 <br>
