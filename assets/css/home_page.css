@@ -1,3 +1,6 @@
+#feed-posts h2 {
+  text-align: center; }
+
 #feed-posts #new-post-form textarea {
   padding: 10px; }
 
@@ -6,8 +9,8 @@
   #posts-list-container li h3 {
     display: inline-block;
     text-align: left;
-    margin-left: -900px;
-    margin-right: 500px;
+    margin-left: -200px;
+    margin-right: 65%;
     margin-bottom: 0; }
   #posts-list-container li a {
     padding: 3px;
@@ -16,27 +19,27 @@
     color: white; }
   #posts-list-container li p {
     text-align: center;
-    width: 50%;
-    height: 20vh;
+    width: 80%;
+    height: 30vh;
     padding: 15px;
     border: 2px solid black;
     border-radius: 5px; }
-  #posts-list-container li .post-comment {
-    width: 60%; }
-    #posts-list-container li .post-comment input[type=text] {
-      width: 40%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      box-sizing: border-box; }
-    #posts-list-container li .post-comment input[type=submit] {
-      margin-left: 200px; }
-  #posts-list-container li .post-comments-list h4 {
-    margin-left: -400px; }
-  #posts-list-container li .post-comments-list p {
-    display: inline-block;
-    text-align: left;
+  #posts-list-container li .post-comment input[type=text] {
     width: 40%;
-    height: 10%;
-    border: none;
-    background-color: lightsalmon;
-    margin-left: -100px; }
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box; }
+  #posts-list-container li .post-comment input[type=submit] {
+    margin-left: 200px; }
+  #posts-list-container li .post-comments-list {
+    text-align: right; }
+    #posts-list-container li .post-comments-list h4 {
+      text-align: center; }
+    #posts-list-container li .post-comments-list p {
+      display: inline-block;
+      text-align: left;
+      width: 40%;
+      height: 10%;
+      border: none;
+      background-color: lightsalmon;
+      margin-right: 100px; }

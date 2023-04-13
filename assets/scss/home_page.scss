@@ -1,4 +1,8 @@
 #feed-posts{
+    h2{
+        text-align: center;
+    }
+    
     #new-post-form{
         textarea{
             padding: 10px;
@@ -12,8 +16,8 @@
         h3{
             display: inline-block;
             text-align: left;
-            margin-left: -900px;
-            margin-right: 500px;
+            margin-left: -200px;
+            margin-right: 65%;
             margin-bottom: 0;
         }
         a{
@@ -24,15 +28,15 @@
         }
         p{
             text-align: center;
-            width: 50%;
-            height: 20vh;
+            width: 80%;
+            height: 30vh;
             padding: 15px;
             border: 2px solid black;
             border-radius: 5px;
         }
 
         .post-comment{
-            width: 60%;
+            // width: 60%;
             // margin-left: 5px;
             // text-align: left;
 
@@ -49,8 +53,11 @@
         }
 
         .post-comments-list{
+            text-align: right;
+
             h4{
-                margin-left: -400px;
+                text-align: center;
+                // margin-left: -400px;
             }
 
             p{
@@ -60,7 +67,8 @@
                 height: 10%;
                 border: none;
                 background-color: lightsalmon;
-                margin-left: -100px;
+                // margin-left: -100px;
+                margin-right: 100px;
             }
         }
     }
